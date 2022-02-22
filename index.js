@@ -17,6 +17,9 @@ app.use(express.json());
 // Base de datos
 dbConnection();
 
+// Directorio publico
+app.use(express.static("public"));
+
 // Crear rutas
 // app.get("/", (req, res) => {
 //   res.json({
