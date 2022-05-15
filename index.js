@@ -37,7 +37,7 @@ app.use("/api/todo", require("./routes/busquedas"));
 app.use("/api/upload", require("./routes/uploads"));
 app.use("/api/login", require("./routes/auth"));
 
-// Lo ultimo
+// Publicar proyecto html en la carpeta public
 app.get("*", (req, res) => {
   res.sendFile(path.resolve(__dirname, "public/index.html"));
 });
